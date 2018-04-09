@@ -1,4 +1,4 @@
-NAME: DynamicOutput.txt
+NAME: DynamicOutput.tsp
 TYPE: TOUR
 DIMENSION: 10
 TOUR_SECTION

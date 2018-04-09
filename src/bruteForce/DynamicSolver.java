@@ -13,7 +13,7 @@ import bruteForce.BruteForceSolver.City;
 public class DynamicSolver implements TSPSolver{
 	
 	private String fileIn;
-	private String fileOut = "DynamicOutput.txt";
+	private String fileOut = "DynamicOutput.tsp";
 	private static List<City> cities = new LinkedList<>();
 	private static double minTourDistance = 1000000000;
 	private static int[] minTour = null;
@@ -94,7 +94,7 @@ public class DynamicSolver implements TSPSolver{
 			bw.write("-1");
 			bw.close();
 			
-			//printMatrix();	
+			printMatrix();	
 		}
 		catch(IOException io)
 		{
@@ -109,6 +109,8 @@ public class DynamicSolver implements TSPSolver{
 	//displays the contents of the matrix
 	private void printMatrix()
 	{
+		System.out.println("\tMatrix:");
+		
 		for (int k = 0; k < matrix.length; k++) 
 		{
 		    for (int j = 0; j < matrix[k].length; j++) 
